@@ -742,10 +742,14 @@
     submitBtn.disabled = true;
     submitBtn.textContent = "Sending…";
 
+    //function showSuccess(){
+     // form.style.display = "none";
+     // success.style.display = "block";
+     // success.scrollIntoView({ behavior: "smooth", block: "center" });
+    //}
+
     function showSuccess(){
-      form.style.display = "none";
-      success.style.display = "block";
-      success.scrollIntoView({ behavior: "smooth", block: "center" });
+      window.location.href = "thank-you.html";
     }
 
     // Send to Google Sheets if the URL is set; otherwise show success (demo mode)
